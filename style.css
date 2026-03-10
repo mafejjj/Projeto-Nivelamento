@@ -1,0 +1,140 @@
+/* ── GERAL ── */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f0;
+  color: #1a1a1a;
+}
+
+/* ── NAVEGAÇÃO ── */
+nav {
+  background-color: white;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1b5e20;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #e65100;
+}
+
+.hero {
+  background-image: url('banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 36px 40px;
+  border-radius: 12px;
+  max-width: 520px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+
+.hero-content h1 span {
+  color: #f9a825;
+}
+
+.hero-content p {
+  color: #eee;
+  font-size: 15px;
+  margin: 0 0 24px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-green {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-green:hover {
+  background-color: #1b5e20;
+}
+
+.btn-orange {
+  background-color: #e65100;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-orange:hover {
+  background-color: #bf360c;
+}
+
+section {
+  padding: 50px 60px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b5e20;
+  margin-bottom: 24px;
+}
+
+.problems-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.problem-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px 20px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.problem-card .icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.problem-card h3 {
+  font-size: 15px;
+  margin: 0 0 6px 0;
+}
+
+.problem-card p {
+  font-size: 13px;
+  color: #757575;
+  margin: 0;
+}
