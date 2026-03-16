@@ -121,7 +121,40 @@
       <span class="tag">Eletrônicos</span>
     </div>
   </div>
-
 </section>
+
+<section class="coleta-section" id="coleta">
+    <p class="section-title">🚛 Solicitar Coleta</p>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Nome</label>
+        <input type="text" id="coleta-nome" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label>Telefone</label>
+        <input type="tel" id="coleta-tel" placeholder="(99) 99999-9999">
+      </div>
+      <div class="form-group">
+        <label>Endereço</label>
+        <input type="text" id="coleta-endereco" placeholder="Rua das Palmeiras, 123, Bairro Centro">
+      </div>
+      <div class="form-group">
+        <label>Tipo de Resíduo</label>
+        <select id="coleta-tipo">
+          <option value="">Selecione...</option>
+          <option>Móveis</option>
+          <option>Eletrônicos</option>
+          <option>Entulho</option>
+          <option>Eletrodomésticos</option>
+          <option>Outros</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-center">
+      <button class="btn-orange" onclick="enviarColeta()">Solicitar Coleta →</button>
+    </div>
+  </section>
 
 </body>
