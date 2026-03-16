@@ -87,7 +87,6 @@
     class="search-bar"
     type="text"
     placeholder="Busque por endereço ou tipo de resíduo..."
-    oninput="filtrarLocais(this.value)"
   >
 
   <div class="local-card">
@@ -152,9 +151,9 @@
       </div>
     </div>
 
-    <div class="form-center">
-      <button class="btn-orange" onclick="enviarColeta()">Solicitar Coleta →</button>
-    </div>
+<div class="form-center">
+  <a class="btn-orange" href="/confirmacao/solicitacao/solicitacao.html">Solicitar Coleta →</a>
+</div>
   </section>
 
     <section class="denuncia-section" id="denuncia">
@@ -183,7 +182,7 @@
 
 
     <div class="form-center">
-      <button class="btn-orange" onclick="enviarDenuncia()">Enviar Denúncia</button>
+       <a class="btn-orange" href="/confirmacao/denuncia/denuncia.html">Enviar Denúncia</a>
     </div>
   </section>
 
