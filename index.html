@@ -53,4 +53,108 @@
     </div>
   </section>
 
+
+
+  <section class="help-section">
+    <p class="section-title" style="text-align:center;">Como Podemos Ajudar Você?</p>
+    <div class="help-grid">
+
+      <a href="#locais" class="help-card">
+        <div class="icon">📍</div>
+        <h3 class="green">Locais de Descarte</h3>
+        <p>Encontre locais adequados para descarte de materiais</p>
+      </a>
+
+      <a href="#coleta" class="help-card">
+        <div class="icon">🚛</div>
+        <h3 class="orange">Solicitar Coleta</h3>
+        <p>Agende a retirada de itens grandes</p>
+      </a>
+
+      <a href="#denuncia" class="help-card">
+        <div class="icon">📸</div>
+        <h3 class="orange">Denunciar Descarte Irregular</h3>
+        <p>Envie fotos de locais poluídos</p>
+      </a>
+
+    </div>
+  </section>
+
+<section class="locais-section" id="locais">
+  <p class="section-title">📍 Locais de Descarte</p>
+
+  <input
+    class="search-bar"
+    type="text"
+    placeholder="Busque por endereço ou tipo de resíduo..."
+    oninput="filtrarLocais(this.value)"
+  >
+
+  <div class="local-card">
+    <h4 class="local-nome">Ecoponto Vila Verde</h4>
+    <p class="address">Rua das Flores, 321, Centro</p>
+    <p class="horario">Segunda a Sábado: 8h às 17h</p>
+    <div class="tags">
+      <span class="tag">Plástico</span>
+      <span class="tag">Papel</span>
+      <span class="tag">Vidro</span>
+      <span class="tag">Metal</span>
+    </div>
+  </div>
+
+  <div class="local-card">
+    <h4 class="local-nome">Posto de Óleo</h4>
+    <p class="address">Av. Paulista, 1050, Centro</p>
+    <p class="horario">Segunda a Sábado: 9h às 16h</p>
+    <div class="tags">
+      <span class="tag">Óleo</span>
+      <span class="tag">Metal</span>
+    </div>
+  </div>
+
+  <div class="local-card">
+    <h4 class="local-nome">Ecoponto Nova Esperança</h4>
+    <p class="address">Estrada 45, 800, Pirabeiraba</p>
+    <p class="horario">Segunda a Sábado: 7h às 16h</p>
+    <div class="tags">
+      <span class="tag">Entulho</span>
+      <span class="tag">Eletrônicos</span>
+    </div>
+  </div>
+</section>
+
+<section class="coleta-section" id="coleta">
+    <p class="section-title">🚛 Solicitar Coleta</p>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Nome</label>
+        <input type="text" id="coleta-nome" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label>Telefone</label>
+        <input type="tel" id="coleta-tel" placeholder="(99) 99999-9999">
+      </div>
+      <div class="form-group">
+        <label>Endereço</label>
+        <input type="text" id="coleta-endereco" placeholder="Rua das Palmeiras, 123, Bairro Centro">
+      </div>
+      <div class="form-group">
+        <label>Tipo de Resíduo</label>
+        <select id="coleta-tipo">
+          <option value="">Selecione...</option>
+          <option>Móveis</option>
+          <option>Eletrônicos</option>
+          <option>Entulho</option>
+          <option>Eletrodomésticos</option>
+          <option>Outros</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-center">
+      <button class="btn-orange" onclick="enviarColeta()">Solicitar Coleta →</button>
+    </div>
+  </section>
+
 </body>
